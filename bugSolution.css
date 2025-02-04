@@ -1,0 +1,17 @@
+/* bugSolution.css */
+
+/* Instead of using calc() with percentages in media queries, consider using viewport units (vw, vh) or adjust your approach to avoid this combination.  This example demonstrates using vw units for width */
+
+@media (max-width: 768px) {
+  .element {
+    width: 50vw; /* Use viewport width units */
+    /*Other styles*/
+  }
+}
+
+@media (min-width: 769px){
+  .element {
+    width: 30%; /*Or a fixed width*/
+    /*Other styles*/
+  }
+}
